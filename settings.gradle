@@ -1,3 +1,4 @@
 include ':cutlass-annotations'
 include ':cutlass-processor'
 include ':cutlass-runtime'
+include ':cutlass-plugin'

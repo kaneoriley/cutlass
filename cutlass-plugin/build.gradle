@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+apply plugin: 'nexus'
+
+//noinspection GroovyUnusedAssignment
+targetCompatibility = JavaVersion.VERSION_1_7
+//noinspection GroovyUnusedAssignment
+sourceCompatibility = JavaVersion.VERSION_1_7
+
+//noinspection GroovyAssignabilityCheck
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+}
