@@ -24,7 +24,6 @@ import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.ParameterSpec;
 import com.squareup.javapoet.TypeSpec;
-import com.sun.istack.internal.Nullable;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -34,6 +33,7 @@ import java.util.Map;
 import java.util.Set;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Filer;
 import javax.annotation.processing.ProcessingEnvironment;
@@ -208,7 +208,7 @@ public final class CutlassProcessor extends AbstractProcessor {
     }
 
     private void error(@Nonnull Element element, @Nonnull String message, @Nullable Object... args) {
-        if (args.length > 0) {
+        if (args != null && args.length > 0) {
             message = String.format(message, args);
         }
         processingEnv.getMessager().printMessage(ERROR, message, element);
