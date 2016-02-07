@@ -6,7 +6,7 @@ TODO: Actual README
 
 # Gradle Dependency
 
-Firstly, you need to add JitPack.io to your repositories list in the root projects build.gradle:
+1. Add JitPack.io to your repositories list in the root projects build.gradle:
 
 ```gradle
 repositories {
@@ -14,12 +14,29 @@ repositories {
 }
 ```
 
-Then, add the following to your module dependencies:
+2. Add cutlass-plugin to your buildscript classpath:
+
+```gradle
+buildscript {
+    dependencies {
+        classpath 'me.oriley.cutlass:cutlass-plugin:0.1b'
+    }
+}
+```
+
+3. Apply plugin to your application or library project:
+
+```gradle
+apply plugin: 'com.android.application' || apply plugin: 'com.android.library'
+apply plugin: 'me.oriley.cutlass-plugin'
+```
+
+4. Add the following to your module dependencies:
 
 ```gradle
 dependencies {
-    provided 'me.oriley.cutlass:cutlass-annotations:0.1'
-    apt 'me.oriley.cutlass:cutlass-processor:0.1'
-    compile 'me.oriley.cutlass:cutlass-runtime:0.1'
+    provided 'me.oriley.cutlass:cutlass-annotations:0.1b'
+    apt 'me.oriley.cutlass:cutlass-processor:0.1b'
+    compile 'me.oriley.cutlass:cutlass-runtime:0.1b'
 }
 ```
