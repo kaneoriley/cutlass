@@ -16,32 +16,32 @@
 
 package me.oriley.cutlass;
 
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.Nonnull;
 import javax.inject.Singleton;
 
 @SuppressWarnings("unused")
 @Singleton
 public final class Injector<T> {
 
-    @Nonnull
+    @NonNull
     private final String mTag;
 
-    @Nonnull
+    @NonNull
     private final T mComponent;
 
-    @Nonnull
+    @NonNull
     private final Class<T> mClass;
 
-    @Nonnull
+    @NonNull
     private final Map<Class, Method> mMethodCache = new HashMap<>();
 
-    public Injector(@Nonnull T component, @Nonnull Class<T> componentClass) {
+    public Injector(@NonNull T component, @NonNull Class<T> componentClass) {
         mComponent = component;
         mClass = componentClass;
         mTag = Injector.class.getSimpleName() + "<" + componentClass.getSimpleName() + ">";
@@ -59,7 +59,7 @@ public final class Injector<T> {
         }
     }
 
-    public void inject(@Nonnull Object object) {
+    public void inject(@NonNull Object object) {
         Class currentClass = object.getClass();
         // TODO: Abort early for known base classes?
         while (currentClass != null) {
