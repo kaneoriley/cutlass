@@ -1,6 +1,7 @@
 [![Release](https://jitpack.io/v/com.github.oriley-me/cutlass.svg)](https://jitpack.io/#com.github.oriley-me/cutlass) [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) [![Build Status](https://travis-ci.org/oriley-me/cutlass.svg?branch=master)](https://travis-ci.org/oriley-me/cutlass) [![Dependency Status](https://www.versioneye.com/user/projects/56b6abea0a0ff5002c8603c6/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56b6abea0a0ff5002c8603c6)
 
 # Cutlass
+![Logo](artwork/icon.png)
 
 TODO: Actual README
 
