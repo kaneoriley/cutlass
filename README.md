@@ -1,4 +1,7 @@
-[![Release](https://jitpack.io/v/com.github.oriley-me/cutlass.svg)](https://jitpack.io/#com.github.oriley-me/cutlass) [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) [![Build Status](https://travis-ci.org/oriley-me/cutlass.svg?branch=master)](https://travis-ci.org/oriley-me/cutlass) [![Dependency Status](https://www.versioneye.com/user/projects/56b6abea0a0ff5002c8603c6/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56b6abea0a0ff5002c8603c6)
+[![Release](https://jitpack.io/v/com.github.oriley-me/cutlass.svg)](https://jitpack.io/#com.github.oriley-me/cutlass)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Build Status](https://travis-ci.org/oriley-me/cutlass.svg?branch=master)](https://travis-ci.org/oriley-me/cutlass)
+[![Dependency Status](https://www.versioneye.com/user/projects/56b6abea0a0ff5002c8603c6/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56b6abea0a0ff5002c8603c6)
 
 # Cutlass
 ![Logo](artwork/icon.png)
@@ -20,7 +23,7 @@ repositories {
 ```gradle
 buildscript {
     dependencies {
-        classpath 'me.oriley.cutlass:cutlass-plugin:0.1b'
+        classpath 'com.github.oriley-me.cutlass:cutlass-plugin:x.y.z'
     }
 }
 ```
@@ -36,8 +39,8 @@ apply plugin: 'me.oriley.cutlass-plugin'
 
 ```gradle
 dependencies {
-    provided 'me.oriley.cutlass:cutlass-annotations:0.1b'
-    apt 'me.oriley.cutlass:cutlass-processor:0.1b'
-    compile 'me.oriley.cutlass:cutlass-runtime:0.1b'
+    provided 'com.github.oriley-me.cutlass:cutlass-annotations:x.y.z'
+    apt 'com.github.oriley-me.cutlass:cutlass-processor:x.y.z'
+    compile 'com.github.oriley-me.cutlass:cutlass-runtime:x.y.z'
 }
 ```
